@@ -14,6 +14,7 @@
     background-size: cover;
     background-position: center;
     color: white;
+   
 }
 
 .navbar{
@@ -43,47 +44,75 @@
     display: none;
 }
 
+
+
 .hero__section_container{
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
-    height: calc(60vh - 60px);
+    height: calc(60vh - 200px);
 }
 
+
+
+
 .hero__section_logo{
-    width: 200px;
-    height: auto;
+    width: 390px;
+    /* height: auto; */
 
 }
 
 .hero__section_title{
     text-align: center;
-    font-size: 25px;
+    font-size: 51.2px;
     font-weight: 480;
 }
 
 .hero__section_input_container{
     background-color: white;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 50%;
     border-radius: 10px;
+    
 }
 
 .input_container_location,.input_container_search{
     padding: 6px;
     border: none;
+    width: 100%;
     outline: none;
+    font-size: 20px; 
+}
+
+.location__icon{
+    padding-left:10px ;
+    color: #FF7E8B;
+}
+
+.input_container_search{
+    background-image: url(https://img.icons8.com/ios/18/828282/search--v1.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 0.5% 50% ;
+    
+
 }
 
 .input_container_location{
-    width: 35%;
+    width: 45%;
     border-right: 2px solid grey;
+    background-image: url(https://img.icons8.com/ios-filled/20/FF7E8B/marker.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 0.7% 50% ;
+    
 }
 
 .input_container_search{
@@ -101,7 +130,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .we__offer_card{
@@ -109,6 +138,7 @@
     overflow: hidden;
     border: 1px solid gray;
     transition: all 0.4s ease;
+    width: calc(90% / 3 );
 }
 
 .we__offer_card:hover{
@@ -139,6 +169,83 @@
     font-size: 15px;
     font-weight: 400;
 }
+
+
+/* section3 collection */
+
+.collections{
+    font-weight: 500;
+}
+
+.collections .sub__heading_container{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub__heading_container span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collection_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.collection_card_container .card{
+    position: relative;
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card1{
+    background-image: url(./images/collection1.jpg);
+}
+.card2{
+    background-image: url(./images/collection2.jpg);
+}
+.card3{
+    background-image: url(./images/collection3.jpg);
+}
+
+.collection_card_container .card .overlay{
+    width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.05) 50%,
+        rgba(0,0,0,0.05) 85%,
+    );  
+}
+
+
+
+
+.collection_card_container .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 16px;
+    color: white;
+   
+}
+
 
 /* media queries */
 
@@ -171,6 +278,19 @@
         padding: 15px;
         border-radius: 10px;
         width: 95%;
+        font-size: 15px; 
+        padding-left: 30px;
+       
+    }
+
+    .input_container_search{    
+        padding-left: 30px;
+        background-position: 0.5% 50% ;
+    }
+    
+    .input_container_location{
+        padding-left: 30px;
+        background-position: 0.5% 50% ;
     }
 
     .hero__section_container{
@@ -183,5 +303,19 @@
     }
 
     /* section2 */
+    .we__offer_card{
+      
+            flex-direction: column;
+            background-color: transparent;
+            width: 80%;
+        
+    }
+
+    /* section3 */
+
+    .collection_card_container{
+        flex-direction: column;
+        
+    }
 }
 
