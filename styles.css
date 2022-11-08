@@ -5,26 +5,36 @@
         font-family: "Poppins", sans-serif ;
 }
 
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 /* section banner */
 
 .hero__section{
     background: url(./images/heroSectionBackground.png);
     min-height: 60vh;
-    background-size: cover;
-    background-position: center;
+    background-size: cover; 
+    background-position: center ;
     color: white;
+   
+
    
 }
 
 .navbar{
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    padding: 15px 45px;
+    
+    
 }
 
 .navbar a{
@@ -44,6 +54,7 @@
     align-items: center;
     justify-content: center;
     display: none;
+    color: #FF7E8B;
 }
 
 
@@ -56,37 +67,47 @@
     justify-content: center;
     gap: 32px;
     height: calc(60vh - 200px);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
 
 
 .hero__section_logo{
-    width: 390px;
+    padding-top: 10vh;
+    width: 290px;
     /* height: auto; */
 
 }
 
 .hero__section_title{
     text-align: center;
-    font-size: 51.2px;
+    font-size: 1.8rem;
+    
     font-weight: 480;
 }
 
 .hero__section_input_container{
     background-color: white;
     padding: 5px;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 50%;
+    width: 800px;
     border-radius: 10px;
+
+  
     
 }
 
 .input_container_location,.input_container_search{
-    padding: 6px;
+    padding: 10px;
+ 
     border: none;
     width: 100%;
     outline: none;
@@ -94,7 +115,8 @@
 }
 
 .location__icon{
-    padding-left:10px ;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FF7E8B;
 }
 
@@ -108,14 +130,15 @@
 }
 
 .input_container_location{
-    width: 45%;
-    border-right: 2px solid grey;
+    width: 300px;
     background-image: url(https://img.icons8.com/ios-filled/20/FF7E8B/marker.png);
     background-repeat: no-repeat;
     padding-left: 30px;
     background-position: 0.7% 50% ;
-    
+    padding-right: 10px;
 }
+
+
 
 .input_container_search{
     width: 65%;
@@ -126,8 +149,6 @@
 
 .container__we_offer{
     margin-top: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
     width: 85%;
     padding: auto;
     display: flex;
@@ -135,7 +156,7 @@
     gap: 2rem;
     align-items: center;
     justify-content: space-around;
-    
+  
 }
 
 .we__offer_card{
@@ -180,7 +201,10 @@
 
 .collections{
     font-weight: 500;
-    margin: 10%;
+    margin: 5%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .collections .sub__heading_container{
@@ -232,12 +256,7 @@
     top: 0;
     left: 0;
     border-radius: 10px;
-    background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.8) 0%,
-        rgba(0,0,0,0.05) 50%,
-        rgba(0,0,0,0.05) 85%,
-    );  
+    background: linear-gradient(0deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.05) 85%,);  
 }
 
 
@@ -259,33 +278,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 251, 247);
+    background-color: transparent;
     width: 100%;
     padding: 3rem 6rem;
+
 }
 
 .get__the_app .semicontainer{
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+
 }
 
 .get__the_app .semicontainer .left{
-    flex: 2;
+    flex: 1;
 }
 
 .get__the_app .semicontainer .left img{
-    width: 100%;
+    width: 80%;
     object-fit: cover;
-    object-position: center;
+    object-position:center;
 }
 
 .get__the_app .semicontainer .right{
-    flex: 3;
-    height: 100%;
+    flex: 2;
+   height: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -369,14 +389,17 @@
 /* section4 */
 
 .footer{
+    margin-top: 50px;
     width: 100%;
+  
+    
 }
 
 .footer_section1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     gap: 2.5rem;
@@ -391,6 +414,7 @@
     gap: 0.5rem;
 }
 .section1__buttonContainer button{
+    /* margin-right:20px ; */
     padding: 5px;
     width: 90px;
     height: 30px;
@@ -406,12 +430,11 @@
 
 .navigation_container{
     display: grid;
-    
     grid-template-columns: repeat(5 , 1fr);
     gap: 1rem;
-    width: 80%;
     margin: auto;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -460,24 +483,28 @@
 }
 
 .disclaimer{
-    width: 90%;
-    margin: auto;
+   
+    
     color: gray;
     font-size: 12px;
     border-top: 1px solid grey;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 
 }
 
 
 .footer__logos{
-    width: 100%;
+    width: 60%;
+}
+
+.footer__logos_container{
+    margin-top: 10px;
 }
 
 /* media queries */
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     /* section1 */
     .navbar__menu_container .user__icon{
         display: flex;
@@ -498,27 +525,25 @@
     .hero__section_input_container{
         flex-direction: column;
         background-color: transparent;
-        width: 80%;
+        width: 70%;
+      
     }
 
     .input_container_location,.input_container_search{
-        padding: 15px;
+        background-color: azure;
+        background-position: 3% 50%;
         border-radius: 10px;
         width: 95%;
         font-size: 15px; 
-        padding-left: 30px;
-       
+        padding-left: 40px;  
     }
 
-    .input_container_search{    
-        padding-left: 30px;
-        background-position: 0.5% 50% ;
+    select{
+        padding-right: 20px;
     }
+
     
-    .input_container_location{
-        padding-left: 30px;
-        background-position: 0.5% 50% ;
-    }
+ 
 
     .hero__section_container{
         height: calc(60vh - 60px);
@@ -529,6 +554,9 @@
         width: 95%;
     }
 
+    .bar{
+        display: none;
+    }
     /* section2 */
     .we__offer_card{
       
@@ -543,6 +571,14 @@
     .collection_card_container{
         flex-direction: column;
 
+    }
+ 
+    .footer__logos_container{
+        display:  flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
@@ -569,6 +605,19 @@
 
     .navigation_container{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer_link ,.footer__heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__logos_container{
+        display:  flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
