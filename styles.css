@@ -270,6 +270,94 @@
     color: white;
    
 }
+/* Section Localites and options near me */
+.heading{
+    margin: 0px;
+    color: rgb(54, 54, 54);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;  
+   
+    padding-top: 10px;  
+}
+.subheading{
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: rgb(54, 54, 54);
+}
+
+.container__option{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.localities{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.localites_places{
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.places h5,.arrow{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    margin: 0px 0px 0.5rem;
+}
+
+.places p{
+    line-height: 1.5;
+    color: rgb(54, 54, 54);
+}
+
+.localites_places:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 1px rgb(232, 232, 232);
+}
+
+.seemore{
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: inherit;
+    font-size: 1.9rem;
+    line-height: 1.2;
+    
+    color: rgb(28, 28, 28);
+}
+.seemore:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px  rgb(232, 232, 232);
+}
+
+.arrow{
+   
+    font-size: 30px;
+    padding-bottom: 10px;
+    
+}
 
 
 /* section3 download app */
@@ -580,6 +668,13 @@
         flex-direction: column;
         gap: 1rem;
     }
+
+    /* localities */
+    .localities{
+        
+        grid-template-columns: repeat(2 ,1fr);
+        
+    }
 }
 
 /* section4 */
@@ -633,10 +728,21 @@
     .navigation_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .localities{
+        
+        grid-template-columns: repeat(2 ,1fr);
+        
+    }
 }
 
 @media screen and (max-width: 500px) {
     .navigation_container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .localities{
+        
+        grid-template-columns: repeat(1 ,1fr);
+        
     }
 }
