@@ -675,6 +675,16 @@
         grid-template-columns: repeat(2 ,1fr);
         
     }
+
+    .get__the_app{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        padding: 3rem 6rem;
+    
+    }
 }
 
 /* section4 */
